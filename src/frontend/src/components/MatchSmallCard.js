@@ -7,8 +7,7 @@ export const MatchSmallCard = ({teamName, match}) => {
     const otherTeamRoute = `/teams/${otherTeam}`;
     return (
         <div className="MatchSmallCard">
-            <h3>vs <Link to={otherTeamRoute}>{otherTeam}</Link>
-            </h3>
+            <h3>vs <Link to={otherTeamRoute}>{otherTeam}</Link></h3>
             <p>{match.winner} won
                 by {match.winByRuns !== 0 ? `${match.winByRuns} runs` : `${match.winByWickets} wickets`}</p>
         </div>
