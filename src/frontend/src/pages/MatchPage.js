@@ -20,7 +20,7 @@ export const MatchPage = () => {
     }, []);
 
     return (
-        <div>
+        <div className="MatchPage">
             <h1>Match Page</h1>
             {
                 matches.map((match) => (

@@ -22,6 +22,7 @@ public class Match {
     private String tossWinner;
     private String tossDecision;
     private String winner;
+    private String resultMargin;
     private String winByRuns;
     private String winByWickets;
     private String playerOfMatch;

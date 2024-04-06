@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { MatchDetailCard } from "../components/MatchDetailCard";
-import { MatchSmallCard } from "../components/MatchSmallCard";
-
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+import {MatchDetailCard} from "../components/MatchDetailCard";
+import {MatchSmallCard} from "../components/MatchSmallCard";
+import './TeamPage.scss'
+import { PieChart } from 'react-minimal-pie-chart';
 export const TeamPage = () => {
     const [team, setTeam] = useState("");
-    const { teamName } = useParams();
+    const {teamName} = useParams();
 
     // useEffect(() => {
     //     const fetchMatches = async () => {
@@ -31,14 +32,37 @@ export const TeamPage = () => {
     if (!team || !teamName) {
         return <h1>Team not found!</h1>; // Return the JSX element in the if condition
     }
+    const words = team.teamName.split(' ');
+    const getInitails = words.map((word) => word.charAt(0)).join('');
+    // console.log(getInitails);
 
     return (
         <div className="TeamPage">
-            <h1>{team.teamName}</h1>
-            <MatchDetailCard teamName={teamName} match={team.matches[0]} />
+            <div className="team-name-section">
+                <img src={`/team_logos/${getInitails}.png`}/>
+                <h1 className="team-name">{team.teamName}</h1>
+                <h3>Latest Matches</h3>
+            </div>
+            <div className="win-loss-section">
+                <h3>WINS / LOSSES</h3>
+                <PieChart
+                    data={[
+                        { title: 'Losses', value: team.totalMatches - team.totalWins, color: 'orangered' },
+                        { title: 'Wins', value: team.totalWins, color: 'limegreen' },
+                    ]}
+                />
+            </div>
+
+            <div className="match-detail-section">
+                <MatchDetailCard teamName={teamName} match={team.matches[0]}/>
+            </div>
             {team.matches.slice(1).map((match) => (
-                <MatchSmallCard teamName={teamName} match={match} key={match.id} />
+                <MatchSmallCard teamName={teamName} match={match} key={match.id}/>
             ))}
+            <div className="more-link">
+                <a href="#">More >></a>
+            </div>
+
         </div>
     );
 };
