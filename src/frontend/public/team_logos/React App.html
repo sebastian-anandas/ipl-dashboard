@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://localhost:3000/teams/Gujarat%20Titans/matches/2023 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>@import url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap);</style><style>* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  /*font-optical-sizing: auto;*/
+  /*font-weight: 400;*/
+  /*font-style: normal;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDRSxzQkFBc0I7RUFDdEIsVUFBVTtFQUNWLFNBQVM7QUFDWDs7QUFFQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdDQUFnQztFQUNoQyw2QkFBNkI7RUFDN0Isb0JBQW9CO0VBQ3BCLHNCQUFzQjtFQUN0QixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGlCQUFpQjtFQUNqQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9UnViaWs6aXRhbCx3Z2h0QDAsMzAwLi45MDA7MSwzMDAuLjkwMCZkaXNwbGF5PXN3YXAnKTtcblxuKiB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIHBhZGRpbmc6IDA7XG4gIG1hcmdpbjogMDtcbn1cblxuYSB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuYm9keSB7XG4gIGZvbnQtZmFtaWx5OiBcIlJ1YmlrXCIsIHNhbnMtc2VyaWY7XG4gIC8qZm9udC1vcHRpY2FsLXNpemluZzogYXV0bzsqL1xuICAvKmZvbnQtd2VpZ2h0OiA0MDA7Ki9cbiAgLypmb250LXN0eWxlOiBub3JtYWw7Ki9cbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIG1heC13aWR0aDogMTEwMHB4O1xuICBtYXJnaW46IDAgYXV0bztcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.App {
+  padding: 20px;
+  text-align: left;
+}
+
+.won-card {
+  background: limegreen;
+}
+
+.lost-card {
+  background: orangered;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtBQUNGOztBQUVBO0VBQ0UscUJBQUE7QUFDRjs7QUFFQTtFQUNFLHFCQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgcGFkZGluZzogMjBweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbn1cblxuLndvbi1jYXJkIHtcbiAgYmFja2dyb3VuZDogbGltZWdyZWVuO1xufVxuXG4ubG9zdC1jYXJkIHtcbiAgYmFja2dyb3VuZDogb3JhbmdlcmVkO1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.MatchDetailCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.MatchDetailCard .match-details {
+  margin-left: 10px;
+}
+.MatchDetailCard .match-date, .MatchDetailCard .match-venue, .MatchDetailCard .match-toss-decision {
+  margin-top: 10px;
+}
+.MatchDetailCard .additional-detail-section {
+  text-align: right;
+}
+.MatchDetailCard .additional-detail-section > p {
+  margin-bottom: 20px;
+}
+.MatchDetailCard .match-result {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL01hdGNoRGV0YWlsQ2FyZC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUUsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0FBQUY7QUFFRTtFQUNFLGlCQUFBO0FBQUo7QUFHRTtFQUNFLGdCQUFBO0FBREo7QUFJRTtFQUNFLGlCQUFBO0FBRko7QUFHSTtFQUNFLG1CQUFBO0FBRE47QUFJRTtFQUNFLGdCQUFBO0VBQ0EsbUJBQUE7QUFGSiIsInNvdXJjZXNDb250ZW50IjpbIi5NYXRjaERldGFpbENhcmQge1xuXG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjtcbiAgcGFkZGluZzogMjBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcblxuICAubWF0Y2gtZGV0YWlscyB7XG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gIH1cblxuICAubWF0Y2gtZGF0ZSwgLm1hdGNoLXZlbnVlLCAubWF0Y2gtdG9zcy1kZWNpc2lvbiB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuXG4gIC5hZGRpdGlvbmFsLWRldGFpbC1zZWN0aW9uIHtcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcbiAgICAmID4gcCB7XG4gICAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICAgIH1cbiAgfVxuICAubWF0Y2gtcmVzdWx0IHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIH1cblxufVxuXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.MatchSmallCard {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.MatchSmallCard .match-result {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL01hdGNoU21hbGxDYXJkLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7QUFDRjtBQUVFO0VBQ0UsZ0JBQUE7QUFBSiIsInNvdXJjZXNDb250ZW50IjpbIi5NYXRjaFNtYWxsQ2FyZCB7XG4gIHBhZGRpbmc6IDE1cHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG5cblxuICAubWF0Y2gtcmVzdWx0IHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICB9XG5cbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.TeamPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.6fr 0.9fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.TeamPage .team-name-section {
+  grid-column: span 3;
+  justify-self: start;
+  align-self: end;
+}
+.TeamPage .team-name {
+  font-size: xxx-large;
+  margin-bottom: 20px;
+}
+.TeamPage .win-loss-section {
+  justify-self: center;
+  padding: 40px;
+  text-align: center;
+}
+.TeamPage .match-detail-section {
+  grid-column: span 4;
+}
+.TeamPage .more-link {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wYWdlcy9UZWFtUGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUUsYUFBQTtFQUNBLHNDQUFBO0VBQ0EsbUNBQUE7RUFDQSxxQkFBQTtFQUNBLGtCQUFBO0FBQUY7QUFFRTtFQUNFLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxlQUFBO0FBQUo7QUFHRTtFQUNFLG9CQUFBO0VBQ0EsbUJBQUE7QUFESjtBQUlFO0VBQ0Usb0JBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7QUFGSjtBQUtFO0VBQ0UsbUJBQUE7QUFISjtBQU1FO0VBQ0Usa0JBQUE7RUFDQSxvQkFBQTtFQUNBLGlCQUFBO0FBSkoiLCJzb3VyY2VzQ29udGVudCI6WyIuVGVhbVBhZ2Uge1xuXG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyO1xuICBncmlkLXRlbXBsYXRlLXJvd3M6IDFmciAwLjZmciAwLjlmcjtcbiAgZ3JpZC1jb2x1bW4tZ2FwOiAxMHB4O1xuICBncmlkLXJvdy1nYXA6IDEwcHg7XG5cbiAgLnRlYW0tbmFtZS1zZWN0aW9uIHtcbiAgICBncmlkLWNvbHVtbjogc3BhbiAzO1xuICAgIGp1c3RpZnktc2VsZjogc3RhcnQ7XG4gICAgYWxpZ24tc2VsZjogZW5kO1xuICB9XG5cbiAgLnRlYW0tbmFtZSB7XG4gICAgZm9udC1zaXplOiB4eHgtbGFyZ2U7XG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgfVxuXG4gIC53aW4tbG9zcy1zZWN0aW9uIHtcbiAgICBqdXN0aWZ5LXNlbGY6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiA0MHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuXG4gIC5tYXRjaC1kZXRhaWwtc2VjdGlvbiB7XG4gICAgZ3JpZC1jb2x1bW46IHNwYW4gNDtcbiAgfVxuXG4gIC5tb3JlLWxpbmsge1xuICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LXNlbGY6IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDEuNXJlbTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.nav-link {
+  align-self: start;
+}
+
+.MatchPage {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.MatchPage .year-selector {
+  justify-self: left;
+  margin-top: 20px;
+}
+.MatchPage .page-heading {
+  margin: 8px auto;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wYWdlcy9NYXRjaFBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0EsOEJBQUE7QUFDRjtBQUNFO0VBQ0Usa0JBQUE7RUFDQSxnQkFBQTtBQUNKO0FBRUU7RUFDRSxnQkFBQTtBQUFKIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdi1saW5rIHtcbiAgYWxpZ24tc2VsZjogc3RhcnQ7XG59XG5cbi5NYXRjaFBhZ2Uge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciA1ZnI7XG5cbiAgLnllYXItc2VsZWN0b3J7XG4gICAganVzdGlmeS1zZWxmOiBsZWZ0O1xuICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gIH1cblxuICAucGFnZS1oZWFkaW5nIHtcbiAgICBtYXJnaW46IDhweCBhdXRvO1xuICB9XG5cbn1cblxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.YearSelector {
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.YearSelector li {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1llYXJTZWxlY3Rvci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7QUFDRjtBQUNFO0VBQ0UsbUJBQUE7QUFDSiIsInNvdXJjZXNDb250ZW50IjpbIi5ZZWFyU2VsZWN0b3Ige1xuICBwYWRkaW5nLXRvcDogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBsaXN0LXN0eWxlOiBub25lO1xuICBmb250LXNpemU6IDEuMnJlbTtcblxuICBsaSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcbiAgfVxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.TeamTile {
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+  justify-self: end;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1RlYW1UaWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLlRlYW1UaWxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcbiAgY29sb3I6IHdoaXRlO1xuICBoZWlnaHQ6IDIwMHB4O1xuICB3aWR0aDogMjUwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gIGp1c3RpZnktc2VsZjogZW5kO1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>body .HomePage {
+  padding-left: 0 !important;
+  margin: 0 !important;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
+  justify-content: center;
+  align-items: center;
+}
+body .HomePage .team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+body .HomePage .app-name {
+  text-align: center;
+  color: white;
+  margin: 20px auto;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wYWdlcy9Ib21lUGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsMEJBQUE7RUFDQSxvQkFBQTtFQUNBLFlBQUEsRUFBQSwrQkFBQTtFQUNBLGFBQUEsRUFBQSxnQ0FBQTtFQUNBLHVGQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQURGO0FBR0U7RUFDRSxhQUFBO0VBQ0EsMENBQUE7RUFDQSwrQkFBQTtFQUNBLHFCQUFBO0VBQ0Esa0JBQUE7QUFESjtBQUlFO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7QUFGTiIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5ib2R5IC5Ib21lUGFnZSB7XG4gIHBhZGRpbmctbGVmdDogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IDAgIWltcG9ydGFudDtcbiAgd2lkdGg6IDEwMHZ3OyAvKiBGdWxsIHdpZHRoIG9mIHRoZSB2aWV3cG9ydCAqL1xuICBoZWlnaHQ6IDEwMHZoOyAvKiBGdWxsIGhlaWdodCBvZiB0aGUgdmlld3BvcnQgKi9cbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly93d3cuaXBsdDIwLmNvbS9hc3NldHMvaW1hZ2VzLy90ZWFtcy1uZXctbGFuZGluZy1iZy5qcGdcIik7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gIC50ZWFtLWdyaWQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmciAxZnIgMWZyO1xuICAgIGdyaWQtdGVtcGxhdGUtcm93czogMWZyIDFmciAxZnI7XG4gICAgZ3JpZC1jb2x1bW4tZ2FwOiAxMHB4O1xuICAgIGdyaWQtcm93LWdhcDogMTBweDtcbiAgfVxuXG4gIC5hcHAtbmFtZSB7XG4gICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICBjb2xvcjogd2hpdGU7XG4gICAgICBtYXJnaW46IDIwcHggYXV0bztcbiAgfVxuXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="MatchPage"><div class="year-selector"><h3>Seasons</h3><ol class="YearSelector"><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2023">2023</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2022">2022</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2021">2021</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2020">2020</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2019">2019</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2018">2018</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2017">2017</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2016">2016</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2015">2015</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2014">2014</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2013">2013</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2012">2012</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2011">2011</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2010">2010</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2009">2009</a></li><li><a href="http://localhost:3000/teams/Gujarat%20Titans/matches/2008">2008</a></li></ol></div><div><h2 class="page-heading">Gujarat Titans matches in 2023</h2><div class="MatchDetailCard lost-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Chennai%20Super%20Kings">Chennai Super Kings</a></h1><h3 class="match-date">2023-05-29</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Chennai Super Kings won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Chennai Super Kings won by 5 Wickets</h3><h3>Man of the Match</h3><p>DP Conway</p><h3>Umpire</h3><p>Nitin Menon, RJ Tucker</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Mumbai%20Indians">Mumbai Indians</a></h1><h3 class="match-date">2023-05-26</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Mumbai Indians won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 62 Runs</h3><h3>Man of the Match</h3><p>Shubman Gill</p><h3>Umpire</h3><p>Nitin Menon, RJ Tucker</p></div></div><div class="MatchDetailCard lost-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Chennai%20Super%20Kings">Chennai Super Kings</a></h1><h3 class="match-date">2023-05-23</h3><h3 class="match-venue">MA Chidambaram Stadium, Chepauk, Chennai</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Chennai Super Kings won by 15 Runs</h3><h3>Man of the Match</h3><p>RD Gaikwad</p><h3>Umpire</h3><p>AK Chaudhary, CB Gaffaney</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Royal%20Challengers%20Bangalore">Royal Challengers Bangalore</a></h1><h3 class="match-date">2023-05-21</h3><h3 class="match-venue">M Chinnaswamy Stadium, Bengaluru</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 6 Wickets</h3><h3>Man of the Match</h3><p>Shubman Gill</p><h3>Umpire</h3><p>Nitin Menon, VK Sharma</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Sunrisers%20Hyderabad">Sunrisers Hyderabad</a></h1><h3 class="match-date">2023-05-15</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Sunrisers Hyderabad won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 34 Runs</h3><h3>Man of the Match</h3><p>Shubman Gill</p><h3>Umpire</h3><p>J Madanagopal, UV Gandhe</p></div></div><div class="MatchDetailCard lost-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Mumbai%20Indians">Mumbai Indians</a></h1><h3 class="match-date">2023-05-12</h3><h3 class="match-venue">Wankhede Stadium, Mumbai</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Mumbai Indians won by 27 Runs</h3><h3>Man of the Match</h3><p>SA Yadav</p><h3>Umpire</h3><p>Nitin Menon, Tapan Sharma</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Lucknow%20Super%20Giants">Lucknow Super Giants</a></h1><h3 class="match-date">2023-05-07</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Lucknow Super Giants won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 56 Runs</h3><h3>Man of the Match</h3><p>Shubman Gill</p><h3>Umpire</h3><p>AK Chaudhary, A Nand Kishore</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Rajasthan%20Royals">Rajasthan Royals</a></h1><h3 class="match-date">2023-05-05</h3><h3 class="match-venue">Sawai Mansingh Stadium, Jaipur</h3><h3 class="match-toss-decision">Rajasthan Royals won the toss and decided to bat</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 9 Wickets</h3><h3>Man of the Match</h3><p>Rashid Khan</p><h3>Umpire</h3><p>HAS Khalid, VK Sharma</p></div></div><div class="MatchDetailCard lost-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Delhi%20Capitals">Delhi Capitals</a></h1><h3 class="match-date">2023-05-02</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Delhi Capitals won the toss and decided to bat</h3></div><div class="additional-detail-section"><h3 class="match-result">Delhi Capitals won by 5 Runs</h3><h3>Man of the Match</h3><p>Mohammed Shami</p><h3>Umpire</h3><p>MA Gough, R Pandit</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Kolkata%20Knight%20Riders">Kolkata Knight Riders</a></h1><h3 class="match-date">2023-04-29</h3><h3 class="match-venue">Eden Gardens, Kolkata</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 7 Wickets</h3><h3>Man of the Match</h3><p>J Little</p><h3>Umpire</h3><p>NA Patwardhan, GR Sadashiv Iyer</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Mumbai%20Indians">Mumbai Indians</a></h1><h3 class="match-date">2023-04-25</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Mumbai Indians won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 55 Runs</h3><h3>Man of the Match</h3><p>A Manohar</p><h3>Umpire</h3><p>AK Chaudhary, A Nand Kishore</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Lucknow%20Super%20Giants">Lucknow Super Giants</a></h1><h3 class="match-date">2023-04-22</h3><h3 class="match-venue">Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to bat</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 7 Runs</h3><h3>Man of the Match</h3><p>MM Sharma</p><h3>Umpire</h3><p>A Totre, RJ Tucker</p></div></div><div class="MatchDetailCard lost-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Rajasthan%20Royals">Rajasthan Royals</a></h1><h3 class="match-date">2023-04-16</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Rajasthan Royals won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Rajasthan Royals won by 3 Wickets</h3><h3>Man of the Match</h3><p>SO Hetmyer</p><h3>Umpire</h3><p>AK Chaudhary, CB Gaffaney</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Punjab%20Kings">Punjab Kings</a></h1><h3 class="match-date">2023-04-13</h3><h3 class="match-venue">Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 6 Wickets</h3><h3>Man of the Match</h3><p>MM Sharma</p><h3>Umpire</h3><p>A Totre, J Madanagopal</p></div></div><div class="MatchDetailCard lost-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Kolkata%20Knight%20Riders">Kolkata Knight Riders</a></h1><h3 class="match-date">2023-04-09</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to bat</h3></div><div class="additional-detail-section"><h3 class="match-result">Kolkata Knight Riders won by 3 Wickets</h3><h3>Man of the Match</h3><p>RK Singh</p><h3>Umpire</h3><p>Nitin Menon, Tapan Sharma</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Delhi%20Capitals">Delhi Capitals</a></h1><h3 class="match-date">2023-04-04</h3><h3 class="match-venue">Arun Jaitley Stadium, Delhi</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 6 Wickets</h3><h3>Man of the Match</h3><p>B Sai Sudharsan</p><h3>Umpire</h3><p>A Nand Kishore, GR Sadashiv Iyer</p></div></div><div class="MatchDetailCard won-card"><div class="match-details"><span class="vs">vs</span><h1><a href="http://localhost:3000/teams/Chennai%20Super%20Kings">Chennai Super Kings</a></h1><h3 class="match-date">2023-03-31</h3><h3 class="match-venue">Narendra Modi Stadium, Ahmedabad</h3><h3 class="match-toss-decision">Gujarat Titans won the toss and decided to field</h3></div><div class="additional-detail-section"><h3 class="match-result">Gujarat Titans won by 5 Wickets</h3><h3>Man of the Match</h3><p>Rashid Khan</p><h3>Umpire</h3><p>Nitin Menon, HAS Khalid</p></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

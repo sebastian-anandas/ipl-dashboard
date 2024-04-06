@@ -1,0 +1,44 @@
+
+
+  body .HomePage {
+  padding-left: 0 !important;
+  margin: 0 !important;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
+  justify-content: center;
+  align-items: center;
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    margin-right: 10px;
+  }
+
+  .app-name {
+      text-align: center;
+      color: white;
+      margin: 20px auto;
+  }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .app-logo {
+      padding: 20px 10px 20px 500px;
+    }
+
+    .app-name {
+      margin: 0;
+      color: white;
+      font-size: 2.5rem;
+      align-self: end;
+      margin-bottom: 10px;
+    }
+
+}

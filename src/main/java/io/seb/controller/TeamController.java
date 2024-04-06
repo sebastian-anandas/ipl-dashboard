@@ -8,6 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.Iterator;
 import java.util.List;
 
 @RestController
@@ -21,6 +22,11 @@ public class TeamController {
         this.teamRepository = teamRepository;
         this.matchRepository = matchRepository;
 
+    }
+
+    @GetMapping("/team")
+    public Iterable<Team> getAllTeams() {
+        return this.teamRepository.findAll();
     }
 
     @GetMapping("/team/{teamName}")

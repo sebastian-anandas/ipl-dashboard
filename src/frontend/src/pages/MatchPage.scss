@@ -1,0 +1,19 @@
+.nav-link {
+  align-self: start;
+}
+
+.MatchPage {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  .year-selector{
+    justify-self: left;
+    margin-top: 20px;
+  }
+
+  .page-heading {
+    margin: 8px auto;
+  }
+
+}
+

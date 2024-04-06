@@ -54,8 +54,8 @@ public class BatchConfig {
     @Bean
     public JdbcBatchItemWriter<Match> writer(DataSource dataSource) {
         return new JdbcBatchItemWriterBuilder<Match>()
-                .sql("INSERT INTO match (id, season, date, team1, team2, toss_winner, toss_decision, winner, win_by_runs, win_by_wickets, player_of_match, venue, umpire1, umpire2, umpire3)" +
-                        " VALUES (:id, :season, :date, :team1, :team2, :tossWinner, :tossDecision, :winner, :winByRuns, :winByWickets, :playerOfMatch, :venue, :umpire1, :umpire2, :umpire3)")
+                .sql("INSERT INTO match (id, season, date, team1, team2, toss_winner, toss_decision, winner, result_margin, win_by_runs, win_by_wickets, player_of_match, venue, umpire1, umpire2, umpire3)" +
+                        " VALUES (:id, :season, :date, :team1, :team2, :tossWinner, :tossDecision, :winner, :resultMargin, :winByRuns, :winByWickets, :playerOfMatch, :venue, :umpire1, :umpire2, :umpire3)")
                 .dataSource(dataSource)
                 .beanMapped()
                 .build();

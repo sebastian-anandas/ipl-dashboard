@@ -1,0 +1,21 @@
+.TeamTile {
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+  justify-self: end;
+
+  .team-name {
+    color: white;
+    //margin-top: 20px;
+    //margin-bottom: 50px;
+    //align-self: end;
+  }
+
+  .team-logo {
+    margin-top: 7px;
+  }
+
+}

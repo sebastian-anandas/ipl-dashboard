@@ -49,13 +49,15 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
         match.setWinner(matchInput.getWinner());
 
-        if(match.getWinByRuns() == null) {
-            match.setResultMargin(match.getWinByWickets() + "Wickets");
-        } else if(match.getWinByWickets() == null) {
-            match.setResultMargin(match.getWinByRuns() + "Runs");
+        String matchResult;
+        if ("0".equals(matchInput.getWin_by_runs())) {
+            matchResult = matchInput.getWin_by_wickets() + " Wickets";
+        } else if ("0".equals(matchInput.getWin_by_wickets())) {
+            matchResult = matchInput.getWin_by_runs() + " Runs";
         } else {
-            match.setResultMargin("Match Drawn");
+            matchResult = "Match Drawn";
         }
+        match.setResultMargin(matchResult);
 
         match.setWinByRuns(matchInput.getWin_by_runs());
         match.setWinByWickets(matchInput.getWin_by_wickets());
