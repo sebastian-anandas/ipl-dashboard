@@ -22,7 +22,8 @@ export const MatchPage = () => {
     }, [teamName, year]);
 
     return (
-        // <div className="nav-link"><Link to={'/team'}>Back to HomePage</Link></div>
+        <>
+        <div className="nav-link"><Link to={'/teams'}>&lt;&lt; Back to HomePage</Link></div>
         <div className="MatchPage">
             <div className="year-selector">
                 <h3>Seasons</h3>
@@ -39,7 +40,7 @@ export const MatchPage = () => {
                 )}
             </div>
         </div>
-
+        </>
     );
 }
 export default MatchPage;

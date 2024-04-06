@@ -14,7 +14,7 @@ function App() {
                 <Route path="/teams/:teamName" element={<TeamPage/>}/>
             </Routes>
             <Routes>
-                <Route path="/team" element={<HomePage/>}/>
+                <Route path="/teams" element={<HomePage/>}/>
             </Routes>
         </Router>
     </div>);

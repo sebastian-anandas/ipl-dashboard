@@ -3,7 +3,7 @@ import {useParams, Link} from "react-router-dom";
 import {MatchDetailCard} from "../components/MatchDetailCard";
 import {MatchSmallCard} from "../components/MatchSmallCard";
 import './TeamPage.scss'
-import { PieChart } from 'react-minimal-pie-chart';
+import {PieChart} from 'react-minimal-pie-chart';
 
 export const TeamPage = () => {
     const [team, setTeam] = useState("");
@@ -38,33 +38,36 @@ export const TeamPage = () => {
     // console.log(getInitails);
 
     return (
-        <div className="TeamPage">
-            <div className="team-name-section">
-                <img src={`/team_logos/${getInitails}.png`}/>
-                <h1 className="team-name">{team.teamName}</h1>
-                <h3>Latest Matches</h3>
-            </div>
-            <div className="win-loss-section">
-                <h3>WINS / LOSSES</h3>
-                <PieChart
-                    data={[
-                        { title: 'Losses', value: team.totalMatches - team.totalWins, color: 'orangered' },
-                        { title: 'Wins', value: team.totalWins, color: 'limegreen' },
-                    ]}
-                />
-            </div>
+        <>
+            <div className="nav-link"><Link to={'/teams'}>&lt;&lt; Back to HomePage</Link></div>
+            <div className="TeamPage">
+                <div className="team-name-section">
+                    <img src={`/team_logos/${getInitails}.png`}/>
+                    <h1 className="team-name">{team.teamName}</h1>
+                    <h3>Latest Matches</h3>
+                </div>
+                <div className="win-loss-section">
+                    <h3>WINS / LOSSES</h3>
+                    <PieChart
+                        data={[
+                            {title: 'Losses', value: team.totalMatches - team.totalWins, color: 'orangered'},
+                            {title: 'Wins', value: team.totalWins, color: 'limegreen'},
+                        ]}
+                    />
+                </div>
 
-            <div className="match-detail-section">
-                <MatchDetailCard teamName={teamName} match={team.matches[0]}/>
-            </div>
-            {team.matches.slice(1).map((match) => (
-                <MatchSmallCard teamName={teamName} match={match} key={match.id}/>
-            ))}
-            <div className="more-link">
-                <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}>More >></Link>
-            </div>
+                <div className="match-detail-section">
+                    <MatchDetailCard teamName={teamName} match={team.matches[0]}/>
+                </div>
+                {team.matches.slice(1).map((match) => (
+                    <MatchSmallCard teamName={teamName} match={match} key={match.id}/>
+                ))}
+                <div className="more-link">
+                    <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}>More >></Link>
+                </div>
 
-        </div>
+            </div>
+        </>
     );
 };
 

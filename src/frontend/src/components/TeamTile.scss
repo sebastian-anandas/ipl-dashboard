@@ -19,3 +19,35 @@
   }
 
 }
+
+//.TeamTile:hover {
+//  border-color: red;
+//}
+
+.TeamTileHover {
+  background-color: #e9ecef;
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .trophy {
+    justify-self: center;
+    padding-top: 20px;
+  }
+
+  .team-name {
+    color: black;
+    margin-top: 7px;
+  }
+
+  .win-year {
+    font-family: bebas_neueregular;
+    font-size: 18px;
+    text-align: center;
+    color: #11141c;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+}

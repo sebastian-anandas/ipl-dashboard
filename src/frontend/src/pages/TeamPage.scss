@@ -1,10 +1,21 @@
+.nav-link {
+  align-self: start;
+  padding: 10px 0px -10px 70px;
+}
+
 .TeamPage {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.6fr 0.9fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 12px;
+  grid-row-gap: 5px;
+
+  margin-top: -20px !important;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
 
   .team-name-section {
     grid-column: span 3;
