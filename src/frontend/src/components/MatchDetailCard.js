@@ -20,7 +20,7 @@ export const MatchDetailCard = ({teamName, match}) => {
             </div>
             <div className="additional-detail-section">
                 <h3 className="match-result">
-                    {match.winner} won by {match.resultMargin}
+                    {match.winner ? `${match.winner} won by ${match.resultMargin}` : "Match Drawn"}
                 </h3>
                 <h3>Man of the Match</h3>
                 <p>{match.playerOfMatch}</p>
