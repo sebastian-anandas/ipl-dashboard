@@ -20,8 +20,10 @@ export const TeamTile = ({teamName}) => {
         "Gujarat Titans": '2022'
     };
 
+
+
     const handleTileClick = () => {
-        window.location.href = `/teams/${teamName}`;
+        window.location.hash = `/teams/${teamName}`;
     };
 
 
@@ -37,7 +39,7 @@ export const TeamTile = ({teamName}) => {
                 <TeamTileHover teamName={teamName} winYear={winYear}/>
             ) : (
                 <Link to={`/teams/${teamName}`}>
-                    <img className="team-logo" src={`/team_logos/${getInitails}.png`}/>
+                    <img className="team-logo" src={`/team_logos/${getInitails}.png`} alt={`${getInitails}-logo`}/>
                     <h3 className="team-name">{teamName}</h3>
                 </Link>
             )}
