@@ -19,14 +19,15 @@ export const TeamPage = () => {
     //     fetchMatches();
     // }, [teamName]);
 
-    async function fetchTeam() {
-        const response = await fetch(`http://localhost:8080/team/${teamName}`);
-        const data = await response.json();
-        console.log(data);
-        setTeam(data);
-    }
-
     useEffect(function () {
+
+        async function fetchTeam() {
+            const response = await fetch(`http://localhost:8080/team/${teamName}`);
+            const data = await response.json();
+            // console.log(data);
+            setTeam(data);
+        }
+
         fetchTeam();
     }, [teamName]);
 
@@ -42,7 +43,7 @@ export const TeamPage = () => {
             <div className="nav-link"><Link to={'/teams'}>&lt;&lt; Back to HomePage</Link></div>
             <div className="TeamPage">
                 <div className="team-name-section">
-                    <img src={`/team_logos/${getInitails}.png`}/>
+                    <img src={`/team_logos/${getInitails}.png`} alt={`${getInitails}-logo`}/>
                     <h1 className="team-name">{team.teamName}</h1>
                     <h3>Latest Matches</h3>
                 </div>
