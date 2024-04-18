@@ -1,10 +1,15 @@
 import './App.scss';
 import {HashRouter as Router, Navigate, Route, Routes} from "react-router-dom";
+import {React, useEffect} from "react";
 import TeamPage from "./pages/TeamPage";
 import MatchPage from "./pages/MatchPage";
 import HomePage from "./pages/HomePage";
 
 function App() {
+    useEffect(() => {
+        document.title = 'IPL Dashboard';
+    }, []);
+
     return (<div className="App">
         <Router>
             <Routes>

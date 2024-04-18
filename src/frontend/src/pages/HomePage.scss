@@ -3,27 +3,32 @@ body, html {
   padding: 0;
 }
 
-.HomePage {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
-  justify-content: center;
-  align-items: center;
+@media screen and (max-height: 100vh) {
+  .HomePage {
+    width: auto; //100vw
+    height: auto;
+    background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-  .team-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 25px;
-    margin-right: 10px;
-  }
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 25px;
+      margin-right: 10px;
+    }
 
-  .app-name {
+    .app-name {
       text-align: center;
       color: white;
       margin: 20px auto;
-  }
+    }
 
     .header-section {
       display: flex;
@@ -42,4 +47,5 @@ body, html {
       margin-bottom: 10px;
     }
 
+  }
 }
