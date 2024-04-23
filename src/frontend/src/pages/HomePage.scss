@@ -3,17 +3,17 @@ body, html {
   padding: 0;
 }
 
-@media screen and (max-height: 100vh) {
-  .HomePage {
-    width: auto; //100vw
-    height: auto;
-    background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2.5%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.HomePage {
+  width: 100%;
+  height: 100%;
+  //background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
+  background-image: url("https://github.com/sebastian-anandas/ipl-dashboard/blob/f17ec1761c5e16ab2da6488ff9716b009b80fade/src/frontend/public/images/landing.jpg");
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  padding-bottom: 10px;
+  background-color: red;
 
     .team-grid {
       display: grid;
@@ -46,6 +46,4 @@ body, html {
       align-self: end;
       margin-bottom: 10px;
     }
-
-  }
 }

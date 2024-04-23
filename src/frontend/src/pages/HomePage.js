@@ -19,7 +19,7 @@ export const HomePage = () => {
     }, []);
 
     return (
-        <div className="HomePage" /*style={{marginLeft: "0px !important"}}*/>
+        <div className="HomePage">
             <div className="header-section">
                 <img className="app-logo" src="/images/IPL_LOGO_CORPORATE_2024.png" alt="app-logo"/>
                 <h1 className="app-name">IPL Dashboard</h1>
