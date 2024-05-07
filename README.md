@@ -11,7 +11,7 @@ The IPL Dashboard is designed for IPL fans and cricket enthusiasts.
 1. Home Page
 * Team Tiles Hover: Users can hover over team tiles on the homepage to check if they were champions of the IPL.
 * Team Details: Clicking on each team tile redirects users to a page displaying the latest match details that the team played.
-Screenshots:
+  
 2. Team Page
 * Recent Match Display:
   - Users can view the most recent match played by the team on the Team Page, including details such as score, result, toss decision, venue, etc.
@@ -22,7 +22,7 @@ Screenshots:
   - A pie chart visually represents the team's win and loss matches, providing a quick overview of their performance.
 
 Clicking on "more" will redirect users to the Matches page, listing all matches played by the team throughout the IPL tournaments.
-Screenshots:
+
 
 3. Match Page
   - Displays all matches played by the team, including details like score, result, toss decision, venue, etc., for the selected year.
