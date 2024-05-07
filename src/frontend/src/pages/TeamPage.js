@@ -45,7 +45,7 @@ export const TeamPage = () => {
                 <div className="team-name-section">
                     <img src={`/team_logos/${getInitails}.png`} alt={`${getInitails}-logo`}/>
                     <h1 className="team-name">{team.teamName}</h1>
-                    <h3>Latest Matches</h3>
+                    <h3 className="latest-matches-heading">Latest Matches</h3>
                 </div>
                 <div className="win-loss-section">
                     <h3>WINS / LOSSES</h3>

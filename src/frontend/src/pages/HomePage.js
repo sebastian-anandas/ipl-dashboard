@@ -19,7 +19,7 @@ export const HomePage = () => {
     }, []);
 
     return (
-        <div className="HomePage">
+        <div className="HomePage" style={{ backgroundImage: 'url("/images/teams-new-landing-bg.jpg")' }}>
             <div className="header-section">
                 <img className="app-logo" src="/images/IPL_LOGO_CORPORATE_2024.png" alt="app-logo"/>
                 <h1 className="app-name">IPL Dashboard</h1>

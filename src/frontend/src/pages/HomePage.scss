@@ -4,24 +4,24 @@ body, html {
 }
 
 .HomePage {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   //background-image: url("https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg");
-  background-image: url("https://github.com/sebastian-anandas/ipl-dashboard/blob/f17ec1761c5e16ab2da6488ff9716b009b80fade/src/frontend/public/images/landing.jpg");
+  //background-image: url("/images/teams-new-landing-bg.jpg");
   justify-content: center;
   align-items: center;
-  background-size: cover; /* Ensures the background image covers the entire container */
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
-  padding-bottom: 10px;
-  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  padding-top: 15px;
 
     .team-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-column-gap: 20px;
-      grid-row-gap: 25px;
-      margin-right: 10px;
+      grid-row-gap: 20px;
+      padding: 5px 50px 50px 50px;
     }
 
     .app-name {
@@ -33,10 +33,11 @@ body, html {
     .header-section {
       display: flex;
       align-items: center;
+      margin-bottom: 5px;
     }
 
     .app-logo {
-      padding: 20px 10px 20px 500px;
+      padding: 10px 10px 10px 500px;
     }
 
     .app-name {
@@ -44,6 +45,6 @@ body, html {
       color: white;
       font-size: 2.5rem;
       align-self: end;
-      margin-bottom: 10px;
+      //margin-bottom: 10px;
     }
 }
